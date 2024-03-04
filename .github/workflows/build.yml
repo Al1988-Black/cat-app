@@ -1,0 +1,20 @@
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    # environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install and Build 
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          BRANCH: gh-pages
+          folder: build

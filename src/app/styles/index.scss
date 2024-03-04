@@ -1,0 +1,16 @@
+@import "reset";
+@import "variables/global";
+
+#root {
+    background: #272a2b;
+    padding: 20px 0;
+}
+
+.App {
+    font: var(--font-m);
+    color: var(--primary-color);
+    background: #fff;
+    margin: 0 auto;
+    max-width: 342px;
+    border-radius: 12px;
+}

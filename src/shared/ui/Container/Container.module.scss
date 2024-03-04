@@ -1,0 +1,13 @@
+.Container.regular {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.Container.flex {
+    display: flex;
+    align-items: center;
+}
+
+.Container.full {
+    width: 100%;
+}

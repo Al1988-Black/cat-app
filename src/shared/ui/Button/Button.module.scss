@@ -1,0 +1,19 @@
+.Button {
+    cursor: pointer;
+    color: var(--third-color);
+}
+
+.outline {
+    border: 1px solid var(--third-color);
+    border-radius: 16px;
+    background: none;
+    padding: 8px 12px;
+    font: var(--font-s);
+}
+
+.icon {
+    width: 31px;
+    height: 33px;
+    padding: 0;
+    border: none;
+}
